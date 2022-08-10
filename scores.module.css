@@ -1,0 +1,43 @@
+/* Desktop View */
+
+@media screen and (min-width: 992px) {
+  .ContentContainer {
+    padding: 0%;
+  }
+
+  .gameTitle {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: end;
+  }
+
+  .teamTitle {
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    line-height: 22px;
+    color: #767676;
+    text-align: end;
+  }
+
+  .gameScoreCard {
+    font-size: 14px;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    text-align: end;
+  }
+
+  .teamScoreCard {
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .cardContainer {
+    border-radius: 6px !important;
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 5%);
+  }
+
+  .teamIcon {
+    width: 45px;
+    height: 45px;
+  }
+}

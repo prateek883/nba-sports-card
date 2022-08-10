@@ -1,0 +1,36 @@
+/* Desktop View */
+
+@media screen and (min-width: 992px) {
+  .ContentContainer {
+    padding: 1%;
+  }
+
+  .monthsButton {
+    text-overflow: ellipsis;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgb(185, 181, 181);
+    font-size: 12px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #000;
+    height: 30px;
+    cursor: pointer;
+    text-transform: none;
+    background-color: #fafafa;
+    width: 90%;
+    margin-right: 3rem;
+  }
+
+  .arrowForward {
+    color: black;
+  }
+
+  .backBtn {
+    background-color: #fafafa;
+  }
+
+  .nextArrow{
+    background-color: #000;
+  }
+}

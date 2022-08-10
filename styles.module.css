@@ -1,0 +1,63 @@
+/* Desktop View */
+
+@media screen and (min-width: 992px) {
+  .ContentContainer {
+    padding: 2% 5% 0% 5%;
+    height: 115px;
+  }
+
+  .notificationIcon {
+    color: #fafafa;
+  }
+
+  .cardHeader {
+    background-color: #1a0dab;
+    height: 3.5em;
+  }
+
+  .cardTitle {
+    color: #fafafa;
+    font: 21px / normal 'Roboto', Helvetica, Sans-Serif;
+    font-weight: 500;
+  }
+
+  .seasonYear {
+    font-size: 10px;
+  }
+
+  .tabContainer {
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Arial', Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    padding: 0% 4% 0% 4%;
+  }
+
+  .tabPanelContainer {
+    background-color: rgb(235, 231, 231);
+  }
+
+  .seasonYear {
+    font-size: 10px;
+  }
+
+  .cardContainer {
+    border-radius: 6px !important;
+  }
+}
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+  .ContentContainer {
+    padding: 10% 5% 2% 5%;
+    height: 515px;
+  }
+}
+
+/* Tablet View */
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .ContentContainer {
+    padding: 4% 5% 2% 5%;
+    height: 265px;
+  }
+}

@@ -1,0 +1,45 @@
+/* Desktop View */
+
+@media screen and (min-width: 992px) {
+  .ContentContainer {
+    padding: 0%;
+  }
+
+  .monthsButton {
+    text-overflow: ellipsis;
+    display: inline-block;
+    margin-right: 8px;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid #ddd;
+    font-size: 13px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #666;
+    height: 30px;
+    cursor: pointer;
+    padding: 0 15px;
+    text-transform: none;
+  }
+
+  .cardContainer {
+    width: 50%;
+    height: 9em;
+  }
+
+  .cardScores {
+    font: 14px / normal 'Roboto', Helvetica, Sans-Serif;
+  }
+
+  .location {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #666;
+  }
+
+  .teamsLogo{
+    width: 35px;
+    height: 35px;
+  }
+}
