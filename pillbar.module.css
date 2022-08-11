@@ -19,7 +19,7 @@
     text-transform: none;
     background-color: #fafafa;
     width: 90%;
-    margin-right: 3rem;
+    margin-right: 1rem;
   }
 
   .arrowForward {
@@ -30,7 +30,7 @@
     background-color: #fafafa;
   }
 
-  .nextArrow{
+  .nextArrow {
     background-color: #000;
   }
 }

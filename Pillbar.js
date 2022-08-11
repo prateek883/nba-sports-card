@@ -1,8 +1,31 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Slider from 'react-slick';
-
 import styles from './pillbar.module.css';
+
+
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'block', Color: 'black' }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: 'block', Color: 'black'  }}
+      onClick={onClick}
+    />
+  );
+}
 
 export default function ClickableLinkChips() {
   var settings = {
@@ -12,6 +35,8 @@ export default function ClickableLinkChips() {
     slidesToShow: 4,
     slidesToScroll: 6,
     initialSlide: 6,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,
