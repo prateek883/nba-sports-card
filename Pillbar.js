@@ -1,29 +1,27 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
 import styles from './pillbar.module.css';
 
-
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function SampleNextArrow(props) {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', Color: 'black' }}
-      onClick={onClick}
-    />
+    <div className={className} onClick={onClick}>
+      <ArrowBackIosNewIcon />
+    </div>
   );
 }
 
 function SamplePrevArrow(props) {
-  const { className, style, onClick } = props;
+  const { className, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: 'block', Color: 'black'  }}
-      onClick={onClick}
-    />
+    <div className={className} onClick={onClick}>
+      <ArrowForwardIosIcon />
+    </div>
   );
 }
 
