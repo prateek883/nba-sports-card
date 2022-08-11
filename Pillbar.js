@@ -4,6 +4,27 @@ import Slider from 'react-slick';
 
 import styles from './pillbar.module.css';
 
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
+function SampleNextArrow(props) {
+  const { className, onClick } = props;
+  return (
+    <div className={className} onClick={onClick}>
+      <ArrowBackIosNewIcon />
+    </div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, onClick } = props;
+  return (
+    <div className={className} onClick={onClick}>
+      <ArrowForwardIosIcon />
+    </div>
+  );
+}
+
 export default function ClickableLinkChips() {
   var settings = {
     infinite: false,
@@ -12,6 +33,8 @@ export default function ClickableLinkChips() {
     slidesToShow: 4,
     slidesToScroll: 6,
     initialSlide: 6,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,

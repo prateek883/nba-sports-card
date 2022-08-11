@@ -140,9 +140,7 @@ export default function FullWidthGrid() {
               className={styles.tabPanelContainer}
             >
               <ChipButton />
-              <CardContent>
-                <ScoreCard />
-              </CardContent>
+              <CardContent>{/* <ScoreCard /> */}</CardContent>
             </TabPanel>
             <TabPanel value={value} index={1}>
               <PlayOffBRacket />
