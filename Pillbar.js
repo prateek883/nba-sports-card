@@ -8,21 +8,19 @@ import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function SampleNextArrow(props) {
-  const { className, onClick } = props;
+  const { className, style, onClick } = props;
   return (
-    <div className={className} onClick={onClick}>
-      <ArrowBackIosNewIcon />
-    </div>
+    <div
+      className={className}
+      onClick={onClick}
+      style={{ ...style, fontSize: '4em' }}
+    ></div>
   );
 }
 
 function SamplePrevArrow(props) {
   const { className, onClick } = props;
-  return (
-    <div className={className} onClick={onClick}>
-      <ArrowForwardIosIcon />
-    </div>
-  );
+  return <div className={className} onClick={onClick}></div>;
 }
 
 export default function ClickableLinkChips() {
@@ -33,7 +31,7 @@ export default function ClickableLinkChips() {
     slidesToShow: 4,
     slidesToScroll: 6,
     initialSlide: 6,
-    nextArrow: <SampleNextArrow />,
+    nextArrow: <SampleNextArrow className={styles.nextArrow} />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {

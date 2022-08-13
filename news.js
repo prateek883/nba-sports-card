@@ -10,6 +10,27 @@ import Typography from '@mui/material/Typography';
 import { styled } from '@mui/material/styles';
 import Slider from 'react-slick';
 
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
+function SampleNextArrow(props) {
+  const { className, onClick } = props;
+  return (
+    <div onClick={onClick}>
+      <ArrowBackIosNewIcon />
+    </div>
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, onClick } = props;
+  return (
+    <div onClick={onClick}>
+      <ArrowForwardIosIcon />
+    </div>
+  );
+}
+
 import styles from './news.module.css';
 
 const Item = styled(Paper)(({ theme }) => ({
@@ -27,6 +48,8 @@ export default function BasicStack() {
     slidesToShow: 3,
     slidesToScroll: 4,
     initialSlide: 0,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
     responsive: [
       {
         breakpoint: 1024,

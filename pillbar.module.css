@@ -2,7 +2,7 @@
 
 @media screen and (min-width: 992px) {
   .ContentContainer {
-    padding: 1%;
+    padding: 1% 3% 1% 3%;
   }
 
   .monthsButton {
@@ -18,7 +18,7 @@
     cursor: pointer;
     text-transform: none;
     background-color: #fafafa;
-    width: 90%;
+    width: 95%;
     margin-right: 3rem;
   }
 
@@ -30,7 +30,11 @@
     background-color: #fafafa;
   }
 
-  .nextArrow{
+  .nextArrow {
     background-color: #000;
+  }
+
+  .nextArrow {
+    font-size: larger;
   }
 }
