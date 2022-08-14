@@ -16,8 +16,8 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 function SampleNextArrow(props) {
   const { className, onClick } = props;
   return (
-    <div onClick={onClick}>
-      <ArrowBackIosNewIcon />
+    <div>
+      <ArrowBackIosNewIcon onClick={onClick} />
     </div>
   );
 }
@@ -25,8 +25,8 @@ function SampleNextArrow(props) {
 function SamplePrevArrow(props) {
   const { className, onClick } = props;
   return (
-    <div onClick={onClick}>
-      <ArrowForwardIosIcon />
+    <div>
+      <ArrowForwardIosIcon onClick={onClick} className={styles.arrow}/>
     </div>
   );
 }
