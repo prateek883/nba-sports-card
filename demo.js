@@ -105,6 +105,7 @@ export default function FullWidthGrid() {
               <Tabs
                 value={value}
                 onChange={handleChange}
+                variant='scrollable'
                 aria-label="basic tabs example"
               >
                 <Tab
