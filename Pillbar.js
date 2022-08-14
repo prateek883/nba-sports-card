@@ -31,7 +31,7 @@ export default function ClickableLinkChips() {
     slidesToShow: 4,
     slidesToScroll: 6,
     initialSlide: 6,
-    nextArrow: <SampleNextArrow className={styles.nextArrow} />,
+    nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
       {

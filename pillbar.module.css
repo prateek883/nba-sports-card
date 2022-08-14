@@ -38,3 +38,81 @@
     font-size: larger;
   }
 }
+
+/* Mobile View */
+@media screen and (max-width: 480px) {
+  .ContentContainer {
+    padding: 1% 1% 1% 1%;
+  }
+
+  .monthsButton {
+    text-overflow: ellipsis;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgb(185, 181, 181);
+    font-size: 10px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #000;
+    height: 30px;
+    cursor: pointer;
+    text-transform: none;
+    background-color: #fafafa;
+    width: 30%;
+  }
+
+  .arrowForward {
+    color: black;
+  }
+
+  .backBtn {
+    background-color: #fafafa;
+  }
+
+  .nextArrow {
+    background-color: #000;
+  }
+
+  .nextArrow {
+    font-size: larger;
+  }
+}
+
+/* Tablet View */
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .ContentContainer {
+    padding: 1% 1% 1% 1%;
+  }
+
+  .monthsButton {
+    text-overflow: ellipsis;
+    border-radius: 16px;
+    text-align: center;
+    border: 1px solid rgb(185, 181, 181);
+    font-size: 10px;
+    line-height: 30px;
+    font-weight: normal;
+    color: #000;
+    height: 30px;
+    cursor: pointer;
+    text-transform: none;
+    background-color: #fafafa;
+    width: 50%;
+  }
+
+  .arrowForward {
+    color: black;
+  }
+
+  .backBtn {
+    background-color: #fafafa;
+  }
+
+  .nextArrow {
+    background-color: #000;
+  }
+
+  .nextArrow {
+    font-size: larger;
+  }
+}
