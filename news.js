@@ -1,5 +1,4 @@
 import * as React from 'react';
-import Paper from '@mui/material/Paper';
 import Stack from '@mui/material/Stack';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -7,39 +6,19 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { styled } from '@mui/material/styles';
 import Slider from 'react-slick';
-
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 function SampleNextArrow(props) {
   const { className, onClick } = props;
-  return (
-    <div>
-      <ArrowBackIosNewIcon onClick={onClick} />
-    </div>
-  );
+  return <div className={className} onClick={onClick}></div>;
 }
 
 function SamplePrevArrow(props) {
   const { className, onClick } = props;
-  return (
-    <div>
-      <ArrowForwardIosIcon onClick={onClick} className={styles.arrow}/>
-    </div>
-  );
+  return <div className={className} onClick={onClick}></div>;
 }
 
 import styles from './news.module.css';
-
-const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-  ...theme.typography.body2,
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  color: theme.palette.text.secondary,
-}));
 
 export default function BasicStack() {
   var settings = {
