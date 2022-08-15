@@ -1,21 +1,13 @@
 import * as React from 'react';
 import Button from '@mui/material/Button';
 import Slider from 'react-slick';
+import Chip from '@mui/material/Chip';
 
 import styles from './pillbar.module.css';
 
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      onClick={onClick}
-      style={{ ...style, fontSize: '4em' }}
-    ></div>
-  );
+  return <div className={className} onClick={onClick}></div>;
 }
 
 function SamplePrevArrow(props) {
@@ -37,7 +29,7 @@ export default function ClickableLinkChips() {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 6,
           slidesToScroll: 3,
           infinite: true,
         },
@@ -45,7 +37,7 @@ export default function ClickableLinkChips() {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 4,
           slidesToScroll: 2,
           initialSlide: 2,
         },
@@ -100,6 +92,51 @@ export default function ClickableLinkChips() {
             className={styles.monthsButton}
           >
             08 June
+          </Button>
+        </div>
+        <div>
+          <Button
+            variant="outlined"
+            href="#outlined-buttons"
+            className={styles.monthsButton}
+          >
+            22 June
+          </Button>
+        </div>
+        <div>
+          <Button
+            variant="outlined"
+            href="#outlined-buttons"
+            className={styles.monthsButton}
+          >
+            22 Jul
+          </Button>
+        </div>
+        <div>
+          <Button
+            variant="outlined"
+            href="#outlined-buttons"
+            className={styles.monthsButton}
+          >
+            28 Ju1
+          </Button>
+        </div>
+        <div>
+          <Button
+            variant="outlined"
+            href="#outlined-buttons"
+            className={styles.monthsButton}
+          >
+            31 Jul
+          </Button>
+        </div>
+        <div>
+          <Button
+            variant="outlined"
+            href="#outlined-buttons"
+            className={styles.monthsButton}
+          >
+            1 Aug
           </Button>
         </div>
         <div>
