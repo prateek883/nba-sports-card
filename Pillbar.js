@@ -52,7 +52,7 @@ export default function ClickableLinkChips() {
       {
         breakpoint: 320,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -91,7 +91,7 @@ export default function ClickableLinkChips() {
             href="#outlined-buttons"
             className={styles.monthsButton}
           >
-            08 June
+            08June
           </Button>
         </div>
         <div>
@@ -100,7 +100,7 @@ export default function ClickableLinkChips() {
             href="#outlined-buttons"
             className={styles.monthsButton}
           >
-            22 June
+            22June
           </Button>
         </div>
         <div>
@@ -109,7 +109,7 @@ export default function ClickableLinkChips() {
             href="#outlined-buttons"
             className={styles.monthsButton}
           >
-            22 Jul
+            22Jul
           </Button>
         </div>
         <div>
@@ -118,7 +118,7 @@ export default function ClickableLinkChips() {
             href="#outlined-buttons"
             className={styles.monthsButton}
           >
-            28 Ju1
+            28Ju1
           </Button>
         </div>
         <div>
@@ -127,7 +127,7 @@ export default function ClickableLinkChips() {
             href="#outlined-buttons"
             className={styles.monthsButton}
           >
-            31 Jul
+            31Jul
           </Button>
         </div>
         <div>
